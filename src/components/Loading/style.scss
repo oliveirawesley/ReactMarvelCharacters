@@ -1,0 +1,25 @@
+.loading {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.2rem 0 0 0;
+
+  span {
+    @media (max-width:414px) {
+      width: 100% !important;
+    }
+  }
+
+  .react-loading-skeleton {
+    margin: 0 1rem 1.5rem 0 !important;
+
+    @media (max-width:414px) {
+      width: 100% !important;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

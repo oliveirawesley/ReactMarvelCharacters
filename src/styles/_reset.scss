@@ -1,0 +1,25 @@
+// Global Reset Styles
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: var(--whitesmoke);
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: var(--primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: var(--primary);
+}

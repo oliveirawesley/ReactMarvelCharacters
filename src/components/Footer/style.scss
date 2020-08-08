@@ -1,0 +1,20 @@
+.footer {
+  border-top: 3px solid var(--primary);
+
+  .top {
+    height: 117px;
+    background: var(--light-gray);
+  }
+
+  .bottom {
+    align-items: center;
+    background: var(--gray);
+    color: var(--dark-gray);
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    height: 105px;
+    justify-content: center;
+    text-align: center;
+  }
+}

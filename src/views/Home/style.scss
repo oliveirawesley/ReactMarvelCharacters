@@ -1,0 +1,123 @@
+.home {
+  padding: 2rem 3rem;
+
+  @media (max-width:414px) {
+    padding: 1rem;
+  }
+
+  background: var(--whitesmoke);
+  height: auto;
+  width: 100%;
+
+  .content {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px 0 rgba(69, 91, 99, 0.08);
+    height: 100%;
+    padding: 33px 35px;
+
+    @media (max-width:414px) {
+      padding: 1rem;
+    }
+
+    width: 100%;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+      color: var(--primary);
+    }
+
+    input {
+      border-bottom: 1px solid var(--border-gray);
+      padding: .5rem;
+      margin: 1rem 0;
+      transition: .3s all;
+      width: 385px;
+
+      @media (max-width:414px) {
+        width: 270px;
+      }
+
+      &:focus {
+        transition: .3s all;
+        border-color: var(--primary);
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+
+      .card {
+        @media (max-width:414px) {
+          width: 100%;
+        }
+      }
+
+      @media (max-width:768px) {
+        justify-content: center;
+      }
+
+    }
+
+    .search {
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+      transition: .1s all;
+
+      small {
+        &:hover {
+          transition: .1s all;
+          color: var(--primary);
+        }
+      }
+
+      .filter {
+        i {
+          color: var(--border-gray);
+          padding: 0 0 0 .25rem;
+        }
+      }
+
+    }
+
+    .paginacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0 0 0;
+
+      button {
+        background: transparent;
+        border: 1px solid var(--dark-gray);
+        color: var(--dark-gray);
+        padding: .5rem;
+        margin: 0 .5rem;
+        transition: .3s all;
+        cursor: pointer;
+
+        &:disabled {
+          border-color: var(--gray);
+          color: var(--gray);
+          cursor: not-allowed;
+
+          &:hover {
+            background: transparent;
+            border-color: var(--gray);
+            color: var(--gray);
+          }
+        }
+
+        &:hover {
+          transition: .3s all;
+          background: var(--primary);
+          border-color: var(--primary);
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

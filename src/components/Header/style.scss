@@ -1,0 +1,14 @@
+.header {
+  background: var(--primary);
+  height: 95px;
+  width: 100%;
+
+  img {
+    margin: 0 0 0 .5rem;
+  }
+
+  @media (max-width:768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
