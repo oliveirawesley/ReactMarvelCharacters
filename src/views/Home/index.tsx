@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 
 import { Md5 } from 'ts-md5/dist/md5';
 import { Link } from 'react-router-dom';
+import { Character } from '../../models/Character.model';
 
 import api from '../../services/api';
+import filterIcon from '../../assets/filter.svg';
 import CharacterCard from '../../components/CharacterCard';
 
 import './style.scss';
 
-import { Character } from '../../models/Character.model';
 import Loading from '../../components/Loading';
 
 const Home: React.FC = () => {
@@ -112,7 +113,7 @@ const Home: React.FC = () => {
             placeholder="Find a Character (Type at Least Three Characters)"
           />
           <div className="filter" onClick={e => setCrescent(!crescent)}>
-            <i className="fas fa-filter"></i>
+            <img src={filterIcon} alt="Filter Icon" />
             <small>A-Z</small>
             <i className="fas fa-chevron-up"></i>
           </div>
